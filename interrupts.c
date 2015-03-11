@@ -11,7 +11,7 @@
 #include <stdint.h>          /* For uint32_t definition                       */
 #include <stdbool.h>         /* For true/false definition                     */
 #include "user.h"
-#include "../Commands/Example/CommandEngine.h"
+#include "CommandEngine.h"
 
 /******************************************************************************/
 /* Interrupt Vector Options                                                   */

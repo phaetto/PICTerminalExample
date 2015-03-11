@@ -11,7 +11,7 @@
 
 #include "system.h"         /* System funct/params, like osc/periph config    */
 #include "user.h"           /* User funct/params, such as InitApp             */
-#include "../Commands/Example/CommandEngine.h"
+#include "CommandEngine.h"
 
 /******************************************************************************/
 /* Global Variable Declaration                                                */

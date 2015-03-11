@@ -7,9 +7,9 @@
       <itemPath>system.h</itemPath>
       <itemPath>user.h</itemPath>
       <itemPath>../Commands/commands.h</itemPath>
-      <itemPath>../Commands/Example/CommandEngine.h</itemPath>
       <itemPath>../Commands/command_clear.h</itemPath>
       <itemPath>../Commands/command_help.h</itemPath>
+      <itemPath>CommandEngine.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -25,9 +25,9 @@
       <itemPath>system.c</itemPath>
       <itemPath>user.c</itemPath>
       <itemPath>../Commands/commands.c</itemPath>
-      <itemPath>../Commands/Example/CommandEngine.c</itemPath>
       <itemPath>../Commands/command_clear.c</itemPath>
       <itemPath>../Commands/command_help.c</itemPath>
+      <itemPath>CommandEngine.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
