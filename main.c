@@ -60,7 +60,7 @@ int32_t main(void)
     INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
     INTEnableInterrupts();
 
-    CurrentCommandEngine.WriteToOutput("[Commands test project]" CMD_CRLF CMD_CRLF);
+    CurrentCommandEngine.WriteToOutput("[Commands test project]" CMD_LF CMD_LF);
 
     while(1)
     {

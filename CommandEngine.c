@@ -23,7 +23,7 @@ static byte CommandBuffer[MAX_BUFFER];
 static byte* ExampleImplementation(const char* args[], struct CommandEngine* commandEngine)
 {
     // TODO: interact with the service
-    return CMD_CRLF "Done." CMD_CRLF;
+    return CMD_LF "Done." CMD_LF;
 }
 
 static const Command ExampleCommand = {
@@ -49,9 +49,9 @@ static void ExampleAppImplementation(const char key, struct CommandEngine* comma
 static void ExampleAppLoadImplementation(const char* args[], struct CommandEngine* commandEngine)
 {
     commandEngine->WriteToOutput(
-    CMD_CRLF "Example process"
+    CMD_LF "Example process"
     // TODO: add description about the buttons
-    CMD_CRLF);
+    CMD_LF);
 }
 
 static void ExampleAppCloseImplementation(struct CommandEngine* commandEngine)
@@ -162,7 +162,6 @@ static Service* Services[] = {
 static void DefaultErrorToOutput(const char *string) {
     WriteString(CMD_MAKEYELLOW);
     WriteString(CMD_MAKEBOLD);
-    WriteString(CMD_CRLF);
     WriteString(string);
     WriteString(CMD_CLEARATTRIBUTES);
 };
