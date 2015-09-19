@@ -59,9 +59,7 @@ int32_t main(void)
     should probably not use a Single Vector Mode*/
     INTConfigureSystem(INT_SYSTEM_CONFIG_MULT_VECTOR);
     INTEnableInterrupts();
-
-    CurrentCommandEngine.WriteToOutput("[Commands test project]" CMD_LF CMD_LF);
-
+    
     while(1)
     {
         DoTasks(&CurrentCommandEngine);

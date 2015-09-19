@@ -2,6 +2,7 @@
 #include "CommandEngine.h"
 #include "../Commands/command_clear.h"
 #include "../Commands/command_help.h"
+#include "../Commands/command_services.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Module definitions
@@ -143,6 +144,7 @@ static Service Example2Service = {
 ////////////////////////////////////////////////////////////////////////////////
 static const Command* Commands[] = {
     &HelpCommand,
+    &ServicesCommand,
     &ClearCommand,
     &ExampleCommand,
     NULL
@@ -175,4 +177,5 @@ CommandEngine CurrentCommandEngine = {
     (WriterMethodType)WriteString,
     (WriterMethodType)DefaultErrorToOutput,
     "$> ",
+    CMD_CLEARSCREEN CMD_MAKEBOLD "[Commands test project]" CMD_CLEARATTRIBUTES CMD_LF CMD_LF,
 };
