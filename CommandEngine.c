@@ -108,7 +108,7 @@ static Service Example1Service = {
 ////////////////////////////////////////////////////////////////////////////////
 // Background service that runs once
 //      Example of a service that does a task after is has been requested from
-//      a process or a command. This service starts as stopped.
+//      a process or a command. This service begins at stopped state.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
